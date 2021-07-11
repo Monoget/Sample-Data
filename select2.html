@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>Select2</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css'>
+<style>
+body {
+  background: #e0e0e0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 15px 0;
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+      <div class="content">
+        <h1>Select2 Styles</h1>
+        <label>Select One</label>
+        <select class="js-select2">
+          <option>Select A</option>
+          <option>Select B</option>
+          <option>Select C</option>
+          <option>Select D</option>
+        </select>
+        <label>Select Multiple</label>
+        <select class="js-select2-multi" multiple="multiple">
+          <option>Select A</option>
+          <option>Select B</option>
+          <option>Select C</option>
+          <option>Select D</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.full.js'></script>
+<script>
+$(document).ready(function() {
+  
+  $(".js-select2").select2();
+  
+  $(".js-select2-multi").select2();
+
+  $(".large").select2({
+    dropdownCssClass: "big-drop",
+  });
+  
+});
+</script>
+
+</body>
+</html>
